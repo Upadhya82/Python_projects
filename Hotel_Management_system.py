@@ -12,7 +12,7 @@ class Hotel :
         self.pricePr=0
     
     def __lt__(self,other):
-        getattr(self,Hotel.sortParam)<getattr(other,Hotel.sortParam)
+        return getattr(self,Hotel.sortParam)<getattr(other,Hotel.sortParam)
     
     # Function to change sort parameter to
     # name
